@@ -1,0 +1,17 @@
+<div class="flex-container">
+  {{#movie}}
+    <img src="{{image}}">
+    <div class="movieinfo">
+      <h2>{{title}}</h2>
+      <h3>Director: {{director}}</h3>
+      <p>stars:</p>
+      <ul>
+        {{#each stars}}
+        <li>{{this}}</li>
+        {{/each}}
+      </ul>
+      <p>{{#each showtimes}}{{this}} | {{/each}}</p>
+      <a href="/movies">Go back</a>
+    </div>
+  {{/movie}}
+</div>
